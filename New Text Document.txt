@@ -1,0 +1,17 @@
+docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+
+docker run -d --name some-mysq -e MYSQL_ROOT_PASSWORD=my-secret-pw -e MYSQL_DATABASE=fungitastic -p 3306:3306 mysql
+
+pip install mysql-connector-python
+
+set MYSQL_HOST=127.0.0.1
+set MYSQL_PORT=3306
+set MYSQL_USER=root
+set MYSQL_PASSWORD=my-secret-pw
+set MYSQL_DATABASE=fungitastic
+
+docker start some-mysql
+
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r .\requirements.txt 
