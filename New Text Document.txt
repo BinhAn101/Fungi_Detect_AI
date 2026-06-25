@@ -1,3 +1,4 @@
+Tạo Database:
 docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
 
 docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -e MYSQL_DATABASE=fungitastic -p 3306:3306 mysql
@@ -10,8 +11,16 @@ set MYSQL_USER=root
 set MYSQL_PASSWORD=my-secret-pw
 set MYSQL_DATABASE=fungitastic
 
+Add dataset vào database: 
+python import_fungitastic_mysql.py
+(Hoặc chạy file trong IDE)
+
+Khởi động database sau khi tắt:
 docker start some-mysql
 
+Cài đặt virtual enviroment:
 python -m venv venv
 .\venv\Scripts\activate
+
+Cài đặt requirements:
 pip install -r .\requirements.txt 
