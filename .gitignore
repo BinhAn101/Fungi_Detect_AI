@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 .env
 .idea/
+.venv/
+
+# Database
+chroma_langchain_db/
+
+# Model weights
+*.pth
