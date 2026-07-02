@@ -2,8 +2,12 @@ langchain
 wikipedia
 langchain-community
 langchain-openai
-langchain-anthropic
 python-dotenv
 pydantic
 duckduckgo-search
 langchain_core
+langchain-chroma
+langchain-classic
+pandas
+torch
+torchvision

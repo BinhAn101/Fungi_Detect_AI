@@ -1,3 +1,4 @@
+Lưu ý: folder images để ngoài desktop (chỉnh đường dẫn import_fungitastic_mysql.py cho đúng với đường dẫn desktop của máy)
 Tạo Database:
 docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
 
@@ -24,3 +25,6 @@ python -m venv venv
 
 Cài đặt requirements:
 pip install -r .\requirements.txt 
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
